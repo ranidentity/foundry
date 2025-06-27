@@ -1,5 +1,5 @@
 pragma solidity ^0.8.0;
-
+// ["alice","miles"]
 contract Voting{
 
     struct Candidate{
@@ -42,4 +42,6 @@ contract Voting{
         }
         return (candidates[winnerIndex].name, candidates[winnerIndex].voteCount);
     }
+    
+    receive() external payable{}
 }
