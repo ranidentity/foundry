@@ -4,8 +4,9 @@ pragma solidity ^0.8.13;
 contract Event{
     string public message = "hello world";
     
+    //
     event MessageUpdated(
-        address indexed _user,
+        address indexed _user, 
         string _message
     );
 
